@@ -1,0 +1,124 @@
+:root{
+	--lightBlue:#1870d5;
+	--blue:#1663be;
+	--red:#f12020;
+}
+
+body{
+	/*background-color: blue;*/
+	margin: 0px;
+	
+}
+.container{
+	display: grid;
+	grid-template-columns:auto;
+	grid-template-rows: auto;
+	grid-template-areas: "nav" "aim" "foot" "rights";
+	background-color: silver;
+	
+
+}
+.container .navbar{
+	grid-area: nav;
+	/*position: absolute;
+	left: 0px;
+	top: 0px;*/
+
+}
+.container .mid{
+	grid-area: aim;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto auto auto;
+	grid-template-areas: "a" "b" "c"; 
+	/*background-color: var(--red);*/
+	/*position: relative;*/
+	/*height: auto;*/
+	/*min-height: 30vh;
+	box-sizing: border-box;
+	grid-gap: 100px;
+
+	margin: 150px;
+	box-shadow: 100px 100px 200px 0px;*/
+}
+.container .foot{
+	grid-area: foot;
+	
+	
+}
+.container .copy{
+	grid-area: rights;
+	margin: 0px;
+	background-color: gold;
+
+}
+.container .mid .mess1{
+	grid-area: a;
+	display: block;
+	min-height: 30vh;
+	box-sizing: border-box;
+	grid-gap: 100px;
+
+	margin: 3.75rem;
+	box-shadow: 100px 30px  300px 0px;
+	
+
+
+}
+.container .mid .mess2{
+	grid-area: b;
+	display: block;
+	min-height: 30vh;
+	box-sizing: border-box;
+	
+
+	margin: 3.75rem;
+	box-shadow: 100px 30px  300px 0px;
+
+
+}
+.container .mid .mess3{
+	grid-area: c;
+	display: block;
+	min-height: 30vh;
+	box-sizing: border-box;
+	
+
+	margin: 3.75rem;
+	box-shadow: 100px 30px  300px 0px;
+
+
+}.content{
+	align-items: center;
+	position: relative;
+	padding: 0px;
+	margin: 20px 0 0 0;
+
+}
+.container .mid .content:before{
+	position: absolute;
+	content: "";
+	width: 10%;
+	top: -10px;
+	left: 45%;
+	height: 2px;
+	background-color: yellow;
+
+
+}
+.container .mid .content:after{
+	position: absolute;
+	content: "";
+	width: 4%;
+	top: -10px;
+	left: 48%;
+	height: 2px;
+	background-color: red;
+
+
+}
+.container .mid .content p{
+	padding: 1.8rem;
+
+}
+
