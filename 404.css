@@ -1,3 +1,6 @@
+
+
+@media screen and (max-width: 600px){
 body{
 	padding: 0px;
 	display: flex;
@@ -13,6 +16,7 @@ body{
 }
 
 .containter{
+
 	display: grid;
 	grid-template-columns: 100vw;
 	grid-template-rows: auto;
@@ -25,6 +29,7 @@ body{
 
 
 }
+
 .container .top .slide-container .imageshow{
 	grid-area: slide;
 	position: absolute;
@@ -33,9 +38,11 @@ body{
 	left: 0px;
 	margin-top: 1.5rem;
 	/*border-radius: 10px;*/
+
 	
 	width: 100%;
-	height: 80vh;
+	height: 60%;
+	margin: 0px;
 	/*object-fit: cover;*/
 	/*object-fit: fill;*/
 	/*display: none;*/
@@ -48,7 +55,7 @@ body{
 
 	grid-area: features;
 	margin: 0px;
-	margin-top: 80vh;
+	margin-top: 60vh;
 	position: relative;
 
 	width: auto;
@@ -61,7 +68,7 @@ body{
 
 	grid-area: features;
 	margin: 0px;
-	margin-top: 50.9vh;
+	margin-top: 30.8vh;
 	position: relative;
 
 	width: auto;
@@ -76,16 +83,20 @@ body{
 	/*overflow: hidden;*/
 	width: auto;
 	position: relative;
+	/*z-index: -2;*/
 
 }
 .navbar #mylink{
 	display: none;
+	z-index: 11;
+	
 	
 
 }
 
 .navbar #mylink a{
 	border-top: 0.13rem solid var(--lightBlue);
+	z-index: 11;
 }
 .home{
 	background-color: #1663be;
@@ -133,12 +144,15 @@ body{
 	text-align: center;
 	/*background-color: red;*/
 	height: auto;
-	min-height: 40vh;
+	min-height: 60vh;
 	color: white;
 	width: auto;
 	background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(2.jpg);
-	background-size: cover;
+	background-size: fill;
 	background-position: center;
+	padding: 1.75rem;
+	
+
 }
 .stats_content{
 	position: relative;
@@ -148,7 +162,6 @@ body{
 	align-items: center;
 	text-align: center;
 	width: auto;
-
 
 }
 .numbers{
@@ -203,7 +216,6 @@ body{
 
 	
 	width: auto;
-
 	/*height: 30vh;*/
 
 	/*flex-direction: row;*/
@@ -294,15 +306,25 @@ body{
 	width: auto;
 	background-color: #1870d5;
 }
-div.gallary{
+.middles div.gallary{
 	margin-top: 2rem;
+	margin: auto;
+
+	
+	
 	/*border: 1px solid #ccc;*/
 	float: left;
-	
+
+}
+.imagesho{
+	width: 50%;
+
 }
 div.desc{
 	padding: 5px;
 	text-align: center;
+	margin-bottom: 1rem;
 
 }
 
+}
